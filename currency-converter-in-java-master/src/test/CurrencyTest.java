@@ -28,18 +28,18 @@ class CurrencyTest {
         /*
         supérieur à l'interval
          */
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(2000000.0, 1.43 ));
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(2000000.0, -1.43 ));
-        assertEquals(calculateExpectedResults(2000000.0, 1.43),Currency.convert(2000000.0 , 1.43 ));
-        assertEquals(calculateExpectedResults(2000000.0, -1.43),Currency.convert(2000000.0 , -1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(2000000.0, 1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(2000000.0, -1.43 ));
+//        assertEquals(calculateExpectedResults(2000000.0, 1.43),Currency.convert(2000000.0 , 1.43 ));
+//        assertEquals(calculateExpectedResults(2000000.0, -1.43),Currency.convert(2000000.0 , -1.43 ));
 
         /*
         inférieur à l'interval
          */
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-50.0, 1.43 ));
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-50.0, -1.43 ));
-        assertEquals(calculateExpectedResults(-50.0, 1.43),Currency.convert(-50.0 , 1.43 ));
-        assertEquals(calculateExpectedResults(-50.0, -1.43),Currency.convert(-50.0 , -1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-50.0, 1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-50.0, -1.43 ));
+//        assertEquals(calculateExpectedResults(-50.0, 1.43),Currency.convert(-50.0 , 1.43 ));
+//        assertEquals(calculateExpectedResults(-50.0, -1.43),Currency.convert(-50.0 , -1.43 ));
     }
 
     @Test
@@ -47,26 +47,26 @@ class CurrencyTest {
         /*
         typique
          */
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-300.0, 1.43 ));
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-300.0, -1.43 ));
-        assertEquals(calculateExpectedResults(-300.0, 1.43),Currency.convert(-300.0 , 1.43 ));
-        assertEquals(calculateExpectedResults(-300.0, -1.43),Currency.convert(-300.0 , -1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-300.0, 1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-300.0, -1.43 ));
+//        assertEquals(calculateExpectedResults(-300.0, 1.43),Currency.convert(-300.0 , 1.43 ));
+//        assertEquals(calculateExpectedResults(-300.0, -1.43),Currency.convert(-300.0 , -1.43 ));
 
         assertEquals(calculateExpectedResults(700000.0, 1.43),Currency.convert(700000.0, 1.43 ));
         assertEquals(calculateExpectedResults(700000.0, -1.43),Currency.convert(700000.0 , -1.43 ));
 
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000500.0, 1.43 ));
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000500.0, -1.43 ));
-        assertEquals(calculateExpectedResults(1000500.0, 1.43),Currency.convert(1000500.0 , 1.43 ));
-        assertEquals(calculateExpectedResults(1000500.0, -1.43),Currency.convert(1000500.0 , -1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000500.0, 1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000500.0, -1.43 ));
+//        assertEquals(calculateExpectedResults(1000500.0, 1.43),Currency.convert(1000500.0 , 1.43 ));
+//        assertEquals(calculateExpectedResults(1000500.0, -1.43),Currency.convert(1000500.0 , -1.43 ));
 
         /*
         frontiere
          */
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-1.0, 1.43 ));
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-1.0, -1.43 ));
-        assertEquals(calculateExpectedResults(-1.0, 1.43),Currency.convert(-1.0, 1.43 ));
-        assertEquals(calculateExpectedResults(-1.0, -1.43),Currency.convert(-1.0 , -1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-1.0, 1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(-1.0, -1.43 ));
+//        assertEquals(calculateExpectedResults(-1.0, 1.43),Currency.convert(-1.0, 1.43 ));
+//        assertEquals(calculateExpectedResults(-1.0, -1.43),Currency.convert(-1.0 , -1.43 ));
 
 
         assertEquals(calculateExpectedResults(0.0, 1.43),Currency.convert(0.0, 1.43 ));
@@ -75,10 +75,10 @@ class CurrencyTest {
         assertEquals(calculateExpectedResults(1000000.0, 1.43),Currency.convert(1000000.0 , 1.43 ));
         assertEquals(calculateExpectedResults(1000000.0, -1.43),Currency.convert(1000000.0, -1.43 ));
 
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000001.0, 1.43 ));
-//        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000001.0, -1.43 ));
-        assertEquals(calculateExpectedResults(1000001.0, 1.43),Currency.convert(1000001.0 , 1.43 ));
-        assertEquals(calculateExpectedResults(1000001.0, -1.43),Currency.convert(1000001.0, -1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000001.0, 1.43 ));
+        assertThrows(IllegalArgumentException.class, () -> Currency.convert(1000001.0, -1.43 ));
+//        assertEquals(calculateExpectedResults(1000001.0, 1.43),Currency.convert(1000001.0 , 1.43 ));
+//        assertEquals(calculateExpectedResults(1000001.0, -1.43),Currency.convert(1000001.0, -1.43 ));
     }
 
 

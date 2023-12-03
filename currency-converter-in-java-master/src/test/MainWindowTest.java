@@ -22,13 +22,13 @@ class MainWindowTest {
         */
         assertDoesNotThrow(() -> MainWindow.convert("Euro", "US Dollar", currencies, 1.0));
         assertDoesNotThrow(() -> MainWindow.convert("Canadian dollar", "US Dollar", currencies, 1.0));
-        assertDoesNotThrow(() -> MainWindow.convert("Sterling", "US Dollar", currencies, 1.0));
+        assertDoesNotThrow(() -> MainWindow.convert("British Pound", "US Dollar", currencies, 1.0));
         assertDoesNotThrow(() -> MainWindow.convert("Swiss franc", "US Dollar", currencies, 1.0));
         assertDoesNotThrow(() -> MainWindow.convert("Australian dollar", "US Dollar", currencies, 1.0));
 
 //        System.out.println(MainWindow.convert("Euro", "US Dollar", currencies, 1.0));
 //        System.out.println(MainWindow.convert("Canadian dollar", "US Dollar", currencies, 1.0));
-//        System.out.println(MainWindow.convert("Sterling", "US Dollar", currencies, 1.0));
+//        System.out.println(MainWindow.convert("British Pound", "US Dollar", currencies, 1.0));
 //        System.out.println(MainWindow.convert("Swiss franc", "US Dollar", currencies, 1.0));
 //        System.out.println(MainWindow.convert("Australian dollar", "US Dollar", currencies, 1.0));
 

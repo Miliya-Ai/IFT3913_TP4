@@ -47,4 +47,13 @@ class MainWindowTest {
         assertEquals(0.0, MainWindow.convert("Dollar exist pas", "US Dollar", currencies, 1.0));
         assertEquals(0.0, MainWindow.convert("US Dollar", "Dollar exist pas", currencies, 1.0));
     }
+
+    @Test
+    public void testControlFlowGraphCoverage() {
+        assertEquals(1.0, MainWindow.convert("US Dollar", "US Dollar", currencies, 1.0));
+        assertEquals(1.07, MainWindow.convert("US Dollar", "Euro", currencies, 1.0));
+        assertEquals(0.0, MainWindow.convert("US Dollar", null, currencies, 1.0));
+        assertEquals(0.0, MainWindow.convert(null, "British Pound", currencies, 1.0));
+        assertEquals(1.41, MainWindow.convert("Euro","British Pound", currencies, 1.0));
+    }
 }

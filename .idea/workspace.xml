@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2a32a51-1aa7-44fb-9ffb-dc47247004fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency-converter-in-java-master/src/test/MainWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-converter-in-java-master/src/test/MainWindowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tp4Github/test/MainWindowTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tp4Github/test/MainWindowTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2Z0i9p4936oVgY0zTcrgywnwGP8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -52,7 +55,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.MainWindowTest.convertPartition">
+  <component name="RunManager" selected="JUnit.MainWindowTest.testInstructionCoverage">
     <configuration name="CurrencyConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="currencyConverter.CurrencyConverter" />
       <module name="tp4Github" />
@@ -81,21 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tp4Github" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MainWindowTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MainWindowTest.convertPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp4Github" />
       <extension name="coverage">
@@ -112,12 +100,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainWindowTest.covertWhiteTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp4Github" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MainWindowTest" />
+      <option name="METHOD_NAME" value="covertWhiteTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainWindowTest.testInstructionCoverage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp4Github" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MainWindowTest" />
+      <option name="METHOD_NAME" value="testInstructionCoverage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainWindowTest.testInstructionCoverage" />
+        <item itemvalue="JUnit.MainWindowTest.covertWhiteTest1" />
+        <item itemvalue="JUnit.CurrencyTest" />
         <item itemvalue="JUnit.MainWindowTest.convertPartition" />
         <item itemvalue="Application.CurrencyConverter" />
-        <item itemvalue="JUnit.MainWindowTest" />
-        <item itemvalue="JUnit.CurrencyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -131,10 +152,22 @@
       <updated>1701565248681</updated>
       <workItem from="1701565251186" duration="1493000" />
       <workItem from="1701566760038" duration="911000" />
+      <workItem from="1701835179044" duration="6051000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
